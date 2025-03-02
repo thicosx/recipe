@@ -1,0 +1,18 @@
+/*
+==================================
+General Style
+==================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", serif;
+    line-height: 1.6;
+}
