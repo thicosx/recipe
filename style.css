@@ -12,7 +12,49 @@ General Style
     padding: 0;
 }
 
+:root {
+    /* Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-stone-100: hsl(30, 54%, 90%);
+    --color-stone-150: hsl(30, 18%, 87%);
+    --color-stone-600: hsl(30, 10%, 34%);
+    --color-stone-900: hsl(24, 5%, 18%);
+    --color-brown-800: hsl(14, 45%, 36%);
+    --color-rose-800: hsl(332, 51%, 32%);
+    --color-rose-50: hsl(330, 100%, 98%);
+
+    /* Padding */
+    --padding-sm: 0.75rem 1.5rem;
+}
+
 body {
     font-family: "Outfit", serif;
     line-height: 1.6;
 }
+
+/*
+==================================
+Header
+==================================
+*/
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-family: "Young Serif", serif;
+    font-size: 2.25rem;
+    padding: var(--padding-sm);
+    line-height: 1.1;
+}
+
+header p {
+    padding: var(--padding-sm);
+    color: var(--color-brown-800);
+}
+
+/*
+Adicionado as cores, estilização geral do body e iniciado a estilização do header.
+*/
