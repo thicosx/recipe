@@ -38,6 +38,11 @@ body {
     color: var(--color-stone-600);
 }
 
+.line {
+    margin: 2rem 1.5rem 0 1.5rem;
+    border: 1px solid var(--color-stone-150);
+}
+
 /*
 ==================================
 Header
@@ -133,8 +138,18 @@ Main
     padding: 0 1rem;
 }
 
+.instructions li::marker {
+    color: var(--color-brown-800);
+    font-weight: 900;
+}
+
 .instructions span {
     font-weight: 900;
 }
+
+/*
+==================================
+==================================
+*/
 
 /* 
