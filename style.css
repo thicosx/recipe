@@ -25,7 +25,8 @@ General Style
     --color-rose-50: hsl(330, 100%, 98%);
 
     /* Padding */
-    --padding-sm-md: 0.75rem 1.5rem;
+    --padding-sm: 0.75rem 1.5rem;
+    --padding-md: 1rem 1.5rem;
 
     /* Fonts */
     --font-titles: "Young Serif", serif;
@@ -62,18 +63,51 @@ header h1 {
     margin-top: 1.25rem;
     font-family: var(--font-titles);
     font-size: 2.25rem;
-    padding: var(--padding-sm-md);
+    padding: var(--padding-sm);
     line-height: 1.1;
     color: var(--color-black);
 }
 
-header p {
-    padding: var(--padding-sm-md);
+span {
+    font-weight: 900;
 }
 
 /*
 ==================================
 Main
+==================================
+*/
+
+header p,
+.nutrition p {
+    padding: var(--padding-sm);
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+    font-size: 1.75rem;
+    font-family: var(--font-titles);
+    color: var(--color-brown-800);
+    padding: var(--padding-md);
+    font-weight: 500;
+}
+
+.preparation li,
+.ingredients li,
+.instructions li {
+    margin: 0.5rem 3rem;
+    padding: 0 1rem;
+}
+
+.preparation li::marker, 
+.instructions li::marker {
+    color: var(--color-brown-800);
+    font-weight: 900;
+}
+
+/*
+==================================
 ==================================
 */
 
@@ -86,90 +120,20 @@ Main
 .preparation h2 {
     font-size: 1.25rem;
     color: var(--color-rose-800);
-    padding: 1rem 1.5rem;
+    padding: var(--padding-md);
 }
 
 .preparation ul {
     padding-bottom: 1rem;
 }
 
-.preparation li {
-    margin: 0.5rem 3rem;
-    padding: 0 1rem;
-}
-
-.preparation li::marker {
-    color: hsl(332, 51%, 32%);
-}
-
-.preparation span {
-    font-weight: 900;
-}
-
 /*
 ==================================
 ==================================
 */
-
-.ingredients h2 {
-    font-size: 1.75rem;
-    font-family: var(--font-titles);
-    color: var(--color-brown-800);
-    padding: 1rem 1.5rem;
-    font-weight: 500;
-}
-
-.ingredients li {
-    margin: 0.5rem 3rem;
-    padding: 0 1rem;
-}
-
-/*
-==================================
-==================================
-*/
-
-.instructions h2 {
-    font-size: 1.75rem;
-    font-family: var(--font-titles);
-    color: var(--color-brown-800);
-    padding: 1rem 1.5rem;
-    font-weight: 500;
-}
-
-.instructions li {
-    margin: 0.5rem 3rem;
-    padding: 0 1rem;
-}
-
-.instructions li::marker {
-    color: var(--color-brown-800);
-    font-weight: 900;
-}
-
-.instructions span {
-    font-weight: 900;
-}
-
-/*
-==================================
-==================================
-*/
-
-.nutrition h2 {
-    font-size: 1.75rem;
-    font-family: var(--font-titles);
-    color: var(--color-brown-800);
-    padding: 1rem 1.5rem;
-    font-weight: 500;
-}
-
-.nutrition p {
-    padding: var(--padding-sm-md);
-}
 
 .nutrition table {
-    margin: var(--padding-sm-md);
+    margin: var(--padding-sm);
     width: 85%;
     text-indent: 40px;
     border-collapse: collapse;
@@ -187,5 +151,3 @@ Main
     font-weight: bold;
     color: var(--color-brown-800);
 }
-
-/* Estilizado a parte nutricional. Também dado um espaçamento no rodapé.
