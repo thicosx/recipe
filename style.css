@@ -43,6 +43,10 @@ body {
     border: 1px solid var(--color-stone-150);
 }
 
+footer {
+    padding: 3rem;
+}
+
 /*
 ==================================
 Header
@@ -152,4 +156,36 @@ Main
 ==================================
 */
 
-/* 
+.nutrition h2 {
+    font-size: 1.75rem;
+    font-family: var(--font-titles);
+    color: var(--color-brown-800);
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+}
+
+.nutrition p {
+    padding: var(--padding-sm-md);
+}
+
+.nutrition table {
+    margin: var(--padding-sm-md);
+    width: 85%;
+    text-indent: 40px;
+    border-collapse: collapse;
+}
+
+.nutrition tr {
+    height: 3rem;
+}
+
+.nutrition table td {
+    border-bottom: 1px solid var(--color-stone-100);
+}
+
+.nutrition table tr td + td {
+    font-weight: bold;
+    color: var(--color-brown-800);
+}
+
+/* Estilizado a parte nutricional. Também dado um espaçamento no rodapé.
