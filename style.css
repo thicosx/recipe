@@ -81,6 +81,7 @@ Main
 header p,
 .nutrition p {
     padding: var(--padding-sm);
+    margin-bottom: 2rem;
 }
 
 .ingredients h2,
@@ -114,7 +115,7 @@ header p,
 .preparation {
     background-color: var(--color-rose-50);
     border-radius: 10px;
-    margin: 1rem 2rem;
+    margin: 0 2rem;
 }
 
 .preparation h2 {
@@ -150,4 +151,51 @@ header p,
 .nutrition table tr td + td {
     font-weight: bold;
     color: var(--color-brown-800);
+}
+
+/*
+==================================
+Media Queries
+==================================
+*/
+
+@media screen and (min-width: 700px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-stone-100);
+    }
+
+    .container {
+        background-color: var(--color-white);
+        width: 55%;
+        margin: 5rem;
+        border-radius: 3rem;
+        padding: 2rem;
+    }
+
+    header {
+        border-radius: 2rem;
+    }
+
+    header img {
+        border-radius: 2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    header,
+    main,
+    footer {
+        background-color: var(--color-white);
+    }
+
+    .nutrition {
+        padding-bottom: 0.25rem;
+    }
+
+    footer {
+        border-radius: 3rem;
+    }
 }
